@@ -1,16 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "@aws-amplify/ui-react/styles.css";
+import {Amplify} from "aws-amplify";
+import {Authenticator} from "@aws-amplify/ui-react";
+import {ThemeProvider} from "@aws-amplify/ui-react";
+import {Button, Heading, Image, View, Card} from "@aws-amplify/ui-react";
+import awsExports from "./aws-exports";
 
-function App() {
+Amplify.configure(awsExports);
+
+
+export default function App({signOut}) {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1>Hello from V2</h1>
-            </header>
-        </div>
+        <Authenticator>
+            <View className="App">
+                <Card>
+                    <Image src={logo} className="App-logo" alt="logo"/>
+                    <Heading level={1}>We now have Auth!</Heading>
+                </Card>
+                <Button onClick={signOut}>Sign Out</Button>
+            </View>
+        </Authenticator>
     );
 }
 
-export default App;
+

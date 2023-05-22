@@ -10,6 +10,11 @@
       "StackName": "amplify-reactgb-dev-153621",
       "StackId": "arn:aws:cloudformation:us-east-1:191576847889:stack/amplify-reactgb-dev-153621/26536810-f817-11ed-89ae-0ec39f6c4d8f",
       "AmplifyAppId": "d2pm1yny6rzxt6"
+    },
+    "categories": {
+      "auth": {
+        "reactgb01ac7490": {}
+      }
     }
   }
 }

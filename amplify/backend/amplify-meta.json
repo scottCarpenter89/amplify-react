@@ -11,5 +11,46 @@
       "StackId": "arn:aws:cloudformation:us-east-1:191576847889:stack/amplify-reactgb-dev-153621/26536810-f817-11ed-89ae-0ec39f6c4d8f",
       "AmplifyAppId": "d2pm1yny6rzxt6"
     }
+  },
+  "auth": {
+    "reactgb01ac7490": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactgb-dev-153621-deployment/amplify-cfn-templates/auth/reactgb01ac7490-cloudformation-template.json",
+        "logicalId": "authreactgb01ac7490"
+      },
+      "lastPushTimeStamp": "2023-05-22T14:22:54.686Z",
+      "output": {
+        "UserPoolId": "us-east-1_6Mnzvx76T",
+        "AppClientIDWeb": "3g3rmfb6vorlv60mguof2sbbmf",
+        "AppClientID": "7o4mpsbb5s73198253d6nlsbas",
+        "IdentityPoolId": "us-east-1:baef6db8-d009-4cec-8858-130de66b8498",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:191576847889:userpool/us-east-1_6Mnzvx76T",
+        "IdentityPoolName": "reactgb01ac7490_identitypool_01ac7490__dev",
+        "UserPoolName": "reactgb01ac7490_userpool_01ac7490"
+      },
+      "lastPushDirHash": "i2UNz9Px3aBGfNOgvlmYqvMlm9A="
+    }
   }
 }
