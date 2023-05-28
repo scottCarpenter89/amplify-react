@@ -40,7 +40,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactgb-dev-153621-deployment/amplify-cfn-templates/auth/reactgb01ac7490-cloudformation-template.json",
         "logicalId": "authreactgb01ac7490"
       },
-      "lastPushTimeStamp": "2023-05-21T21:12:48.927Z",
+      "lastPushTimeStamp": "2023-05-28T03:25:25.353Z",
       "output": {
         "UserPoolId": "us-east-1_6Mnzvx76T",
         "AppClientIDWeb": "3g3rmfb6vorlv60mguof2sbbmf",
@@ -51,6 +51,50 @@
         "UserPoolName": "reactgb01ac7490_userpool_01ac7490"
       },
       "lastPushDirHash": "i2UNz9Px3aBGfNOgvlmYqvMlm9A="
+    }
+  },
+  "api": {
+    "reactgb": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "vqmaicbzavgehd6ngfsew4fvvi",
+        "GraphQLAPIEndpointOutput": "https://hvrxnu53zba5xpo45az7u242pu.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-6wfioxme3zftrgkgttz63wnmbi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactgb-dev-153621-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apireactgb"
+      },
+      "lastPushTimeStamp": "2023-05-28T03:25:25.355Z",
+      "lastPushDirHash": "KWx/4Z9LCWKvzeMN5Sy/aMqTIOA="
+    }
+  },
+  "storage": {
+    "imageStorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2023-05-28T03:25:25.618Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactgb-dev-153621-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimageStorage"
+      },
+      "output": {
+        "BucketName": "gb-bucket153621-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "/hf4EkY8DMm3JMZRDyrSz5WO9sU="
     }
   }
 }

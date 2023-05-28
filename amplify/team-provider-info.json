@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "reactgb01ac7490": {}
+      },
+      "api": {
+        "reactgb": {}
+      },
+      "storage": {
+        "imageStorage": {}
       }
     }
   }
